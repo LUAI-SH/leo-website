@@ -87,7 +87,7 @@ class TeamAppView extends React.Component {
                 <div className="af-class-container-3 af-class-center">
                   <h6 className="af-class-h6">project showcase</h6>
                   <h1 className="af-class-h2">Team App website</h1>
-                  <p className="af-class-p af-class-padding">Full website design &nbsp;and build for a concept team collaboration platform. This website also &nbsp;includes a beautiful blog. I have built the website and the blog in Webflow &nbsp;which has one of the best CMS for blog hosting.</p><a href="#" className="af-class-live-site-link">visit live site →</a></div>
+                  <p className="af-class-p af-class-padding">Full website design &nbsp;and build for a concept team collaboration platform. This website also &nbsp;includes a beautiful blog. I have built the website and the blog in Webflow &nbsp;which has one of the best CMS for blog hosting.</p><a href="https://team-app.webflow.io" className="af-class-live-site-link">visit live site →</a></div>
               </div>
             </div>
             <div className="af-class-section-2">
