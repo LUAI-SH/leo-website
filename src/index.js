@@ -17,7 +17,7 @@ ReactDOM.render(
     <Switch>
       <Route exact path="/" component={IndexView} />
       <Route path="/team-app" component={TeamAppView} />
-      <Route path="/chat-app" component={ChatAppWebsiteView} />
+      <Route path="/chat-app-website" component={ChatAppWebsiteView} />
     </Switch>
   </BrowserRouter>
   // <React.StrictMode>
