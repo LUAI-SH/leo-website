@@ -2,6 +2,7 @@
 
 import React from 'react'
 import { createScope, map, transformProxies } from './helpers'
+import { BrowserRouter, Switch, Route, Link } from "react-router-dom";
 
 const scripts = [
   fetch("https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.4.1.min.220afd743d.js?site=5ee4900cadd438d39a2b4ec5").then(body => body.text()),
@@ -113,11 +114,11 @@ class IndexView extends React.Component {
                     <div className="af-class-tags">Concept</div>
                   </div>
                   <p className="af-class-p">Full website design &nbsp;and build for a concept team collaboration platform. This website also &nbsp;includes a beautiful blog. I have built the website and the blog in Webflow &nbsp;which has one of the best CMS for blog hosting.</p>
-                  <div className="af-class-button-wrapper af-class-_2"><a href="team-app.html" target="_blank" className="af-class-button af-class-_2 w-button">see this project</a></div>
+                  <div className="af-class-button-wrapper af-class-_2"><Link to="team-app" target="_blank" className="af-class-button af-class-_2 w-button">see this project</Link></div>
                 </div>
                 <div className="af-class-last-work-right">
-                  <a href="team-app" target="_blank" className="af-class-link-block-3 w-inline-block">
-                    <div className="af-class-text-block-2">see this project </div><img src="images/team_app.jpg" srcSet="images/team_app-p-500.jpeg 500w, images/team_app-p-800.jpeg 800w, images/team_app.jpg 900w" sizes="(max-width: 479px) 74vw, (max-width: 767px) 84vw, (max-width: 991px) 39vw, (max-width: 1439px) 36vw, 39vw" alt className="af-class-image-2" /></a>
+                  <Link to="team-app" target="_blank" className="af-class-link-block-3 w-inline-block">
+                    <div className="af-class-text-block-2">see this project </div><img src="images/team_app.jpg" srcSet="images/team_app-p-500.jpeg 500w, images/team_app-p-800.jpeg 800w, images/team_app.jpg 900w" sizes="(max-width: 479px) 74vw, (max-width: 767px) 84vw, (max-width: 991px) 39vw, (max-width: 1439px) 36vw, 39vw" alt className="af-class-image-2" /></Link>
                 </div>
               </div>
               <div className="af-class-seprator-line-wrapper">
@@ -134,11 +135,11 @@ class IndexView extends React.Component {
                     <div className="af-class-tags">Concept</div>
                   </div>
                   <p className="af-class-p">This is a homepage design and build for a concept project – a chat application. I designed the page first then built a responsive web page using Webflow.<br /></p>
-                  <div className="af-class-button-wrapper af-class-_2"><a href="chat-app-website.html" target="_blank" className="af-class-button af-class-_2 w-button">see this project</a></div>
+                  <div className="af-class-button-wrapper af-class-_2"><Link to="chat-app-website" target="_blank" className="af-class-button af-class-_2 w-button">see this project</Link></div>
                 </div>
                 <div className="af-class-last-work-right">
-                  <a href="chat-app-website" target="_blank" className="af-class-link-block-3 w-inline-block">
-                    <div className="af-class-text-block-2">see this project </div><img src="images/chat-app.jpg" srcSet="images/chat-app-p-500.jpeg 500w, images/chat-app-p-800.jpeg 800w, images/chat-app.jpg 816w" sizes="(max-width: 479px) 74vw, (max-width: 767px) 84vw, (max-width: 991px) 39vw, (max-width: 1439px) 36vw, 39vw" alt className="af-class-image-2" /></a>
+                  <Link to="chat-app-website" target="_blank" className="af-class-link-block-3 w-inline-block">
+                    <div className="af-class-text-block-2">see this project </div><img src="images/chat-app.jpg" srcSet="images/chat-app-p-500.jpeg 500w, images/chat-app-p-800.jpeg 800w, images/chat-app.jpg 816w" sizes="(max-width: 479px) 74vw, (max-width: 767px) 84vw, (max-width: 991px) 39vw, (max-width: 1439px) 36vw, 39vw" alt className="af-class-image-2" /></Link>
                 </div>
               </div>
             </div>
