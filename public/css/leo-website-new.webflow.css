@@ -1035,6 +1035,8 @@
     margin-bottom: 24px;
   }
   .af-view .af-class-hero-content {
+    position: relative;
+    z-index: 10;
     margin-bottom: 16px;
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
@@ -1134,18 +1136,29 @@
     max-width: 100%;
   }
   .af-view .af-class-navbar {
+    position: fixed;
+    left: 0%;
+    top: 0%;
+    right: 0%;
+    bottom: auto;
+    background-color: #000;
+  }
+  .af-view .af-class-nav-wrapper {
     background-color: #000;
   }
   .af-view .af-class-lottie-animation-3 {
     width: 50px;
   }
   .af-view .af-class-nav-menu {
-    position: fixed;
+    position: -webkit-sticky;
+    position: sticky;
     left: auto;
     top: 0%;
     right: 0%;
     bottom: 0%;
-    z-index: 0;
+    z-index: 999;
+    overflow: visible;
+    height: 100vh;
     min-width: 100vw;
     margin-top: 85px;
     padding: 16px;
@@ -1198,6 +1211,13 @@
     padding-right: 0px;
     padding-left: 0px;
   }
+  .af-view .af-class-link-block-3 {
+    position: relative;
+  }
+  .af-view .af-class-text-block-2 {
+    z-index: 20;
+    opacity: 0;
+  }
   .af-view .af-class-header {
     padding: 2px;
   }
@@ -1221,10 +1241,10 @@
     margin-left: 16px;
     padding: 8px;
   }
-  .af-view .af-class-menu-button {
+  .af-view .af-class-navburger {
     background-color: transparent;
   }
-  .af-view .af-class-menu-button.w--open {
+  .af-view .af-class-navburger.w--open {
     background-color: transparent;
   }
   .af-view .af-class-icon {
@@ -1236,6 +1256,9 @@
   }
   .af-view .af-class-beta {
     z-index: 10000;
+  }
+  .af-view .af-class-body {
+    overflow: visible;
   }
 }
 

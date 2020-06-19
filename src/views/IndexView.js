@@ -2,7 +2,6 @@
 
 import React from 'react'
 import { createScope, map, transformProxies } from './helpers'
-import { BrowserRouter, Switch, Route, Link } from "react-router-dom";
 
 const scripts = [
   fetch("https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.4.1.min.220afd743d.js?site=5ee4900cadd438d39a2b4ec5").then(body => body.text()),
@@ -59,11 +58,8 @@ class IndexView extends React.Component {
           @import url(/css/leo-website-new.webflow.css);
         ` }} />
         <span className="af-view">
-          <div>
-            <div className="w-embed">
-              <style dangerouslySetInnerHTML={{__html: "\n.af-view .af-class-clipped {\n    -webkit-text-fill-color: transparent;\n    -webkit-background-clip: text;\n" }} />
-            </div>
-            <div data-collapse="small" data-animation="over-right" data-duration={400} data-easing="ease-in" data-easing2="ease-out" data-w-id="47fbcf49-5b35-c091-2786-d25012d45394" role="banner" className="af-class-navbar w-nav">
+          <div className="af-class-body">
+            <div data-animation="over-right" className="af-class-navbar w-nav" data-easing2="ease-out" data-easing="ease-in" data-collapse="small" data-w-id="47fbcf49-5b35-c091-2786-d25012d45394" role="banner" data-no-scroll={1} data-duration={400}>
               <div data-w-id="e5b5de68-015c-813d-f6cb-3358a9afab79" className="af-class-navbar">
                 <div className="af-class-nav-wrapper">
                   <a href="#" data-w-id="47fbcf49-5b35-c091-2786-d25012d45396" className="af-class-brand w-nav-brand">
@@ -79,11 +75,14 @@ class IndexView extends React.Component {
                       <div className="af-class-link-hover" />
                     </a>
                   </nav>
-                  <div className="af-class-menu-button w-nav-button">
+                  <div className="af-class-navburger w-nav-button">
                     <div data-w-id="1686c501-3118-6005-8281-86ad3f025792" data-animation-type="lottie" data-src="documents/menu_icon.json" data-loop={0} data-direction={1} data-autoplay={0} data-is-ix2-target={1} data-renderer="svg" data-default-duration="2.7" data-duration={0} className="af-class-lottie-animation-4" />
                   </div>
                 </div>
               </div>
+            </div>
+            <div className="w-embed">
+              <style dangerouslySetInnerHTML={{__html: "\n.af-view .af-class-clipped {\n    -webkit-text-fill-color: transparent;\n    -webkit-background-clip: text;\n" }} />
             </div>
             <div className="af-class-hero">
               <div className="af-class-container">
@@ -92,14 +91,14 @@ class IndexView extends React.Component {
                 </div>
                 <div className="af-class-hero-content">
                   <div className="af-class-hero-p">
-                    <p style={{WebkitTransform: 'translate3d(0, 15PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)', MozTransform: 'translate3d(0, 15PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)', msTransform: 'translate3d(0, 15PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)', transform: 'translate3d(0, 15PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)', opacity: 0}} className="af-class-p af-class-p-hero">Hi! 😀 My name is Leo. I'm a web designer and developer living in Melbourne, 🇦🇺.</p>
+                    <p style={{WebkitTransform: 'translate3d(0, 15PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)', MozTransform: 'translate3d(0, 15PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)', msTransform: 'translate3d(0, 15PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)', transform: 'translate3d(0, 15PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)', opacity: 0}} className="af-class-p af-class-p-hero">Hi! 😀 &nbsp;My name is Leo. I'm a web designer and developer living in Melbourne, 🇦🇺.</p>
                     <p style={{WebkitTransform: 'translate3d(0, 15PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)', MozTransform: 'translate3d(0, 15PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)', msTransform: 'translate3d(0, 15PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)', transform: 'translate3d(0, 15PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)', opacity: 0}} className="af-class-p af-class-p-hero">I design and build beautiful websites for businesses around the globe. If you need a modern and powerful website, send me an email. If we are a good fit, I will give you a time and cost estimate.</p>
                   </div>
                   <div data-w-id="2adaccfc-49b5-fbdf-20bf-459040ec8892" style={{WebkitTransform: 'translate3d(0, 15PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)', MozTransform: 'translate3d(0, 15PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)', msTransform: 'translate3d(0, 15PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)', transform: 'translate3d(0, 15PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)', opacity: 0}} className="af-class-hero-button">
                     <div className="af-class-button-wrapper"><a href="#my-work" className="af-class-button w-button">see my work</a></div>
                   </div>
                 </div>
-                <div className="af-class-hero-image-wrapper"><img src="images/Hero-image.png" width={702} srcSet="images/Hero-image-p-500.png 500w, images/Hero-image-p-800.png 800w, images/Hero-image.png 802w" sizes="(max-width: 479px) 75vw, (max-width: 767px) 90vw, (max-width: 1919px) 40vw, 702px" data-w-id="41234e6c-29fa-63cf-9abb-c89b31f4317e" style={{WebkitTransform: 'translate3d(0, 0, 0) scale3d(0.8, 0.8, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)', MozTransform: 'translate3d(0, 0, 0) scale3d(0.8, 0.8, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)', msTransform: 'translate3d(0, 0, 0) scale3d(0.8, 0.8, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)', transform: 'translate3d(0, 0, 0) scale3d(0.8, 0.8, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)', opacity: 0}} alt className="af-class-image" /></div>
+                <div className="af-class-hero-image-wrapper"><img src="images/Hero-image.png" srcSet="images/Hero-image-p-500.png 500w, images/Hero-image-p-800.png 800w, images/Hero-image.png 802w" sizes="(max-width: 479px) 100vw, (max-width: 767px) 64vw, (max-width: 991px) 336px, (max-width: 1919px) 36vw, 802px" data-w-id="41234e6c-29fa-63cf-9abb-c89b31f4317e" style={{WebkitTransform: 'translate3d(0, 0, 0) scale3d(0.8, 0.8, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)', MozTransform: 'translate3d(0, 0, 0) scale3d(0.8, 0.8, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)', msTransform: 'translate3d(0, 0, 0) scale3d(0.8, 0.8, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)', transform: 'translate3d(0, 0, 0) scale3d(0.8, 0.8, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)', opacity: 0}} alt className="af-class-image" /></div>
               </div>
             </div>
             <div id="my-work" className="af-class-my-work">
@@ -114,11 +113,11 @@ class IndexView extends React.Component {
                     <div className="af-class-tags">Concept</div>
                   </div>
                   <p className="af-class-p">Full website design &nbsp;and build for a concept team collaboration platform. This website also &nbsp;includes a beautiful blog. I have built the website and the blog in Webflow &nbsp;which has one of the best CMS for blog hosting.</p>
-                  <div className="af-class-button-wrapper af-class-_2"><Link to="team-app" target="_blank" className="af-class-button af-class-_2 w-button">see this project</Link></div>
+                  <div className="af-class-button-wrapper af-class-_2"><a href="team-app.html" target="_blank" className="af-class-button af-class-_2 w-button">see this project</a></div>
                 </div>
                 <div className="af-class-last-work-right">
-                  <Link to="team-app" target="_blank" className="af-class-link-block-3 w-inline-block">
-                    <div className="af-class-text-block-2">see this project </div><img src="images/team_app.jpg" srcSet="images/team_app-p-500.jpeg 500w, images/team_app-p-800.jpeg 800w, images/team_app.jpg 900w" sizes="(max-width: 479px) 74vw, (max-width: 767px) 84vw, (max-width: 991px) 39vw, (max-width: 1439px) 36vw, 39vw" alt className="af-class-image-2" /></Link>
+                  <a href="team-app.html" target="_blank" className="af-class-link-block-3 w-inline-block">
+                    <div className="af-class-text-block-2">see this project </div><img src="images/team_app.jpg" srcSet="images/team_app-p-500.jpeg 500w, images/team_app-p-800.jpeg 800w, images/team_app.jpg 900w" sizes="(max-width: 479px) 74vw, (max-width: 767px) 84vw, (max-width: 991px) 39vw, (max-width: 1439px) 36vw, 39vw" alt className="af-class-image-2" /></a>
                 </div>
               </div>
               <div className="af-class-seprator-line-wrapper">
@@ -135,11 +134,11 @@ class IndexView extends React.Component {
                     <div className="af-class-tags">Concept</div>
                   </div>
                   <p className="af-class-p">This is a homepage design and build for a concept project – a chat application. I designed the page first then built a responsive web page using Webflow.<br /></p>
-                  <div className="af-class-button-wrapper af-class-_2"><Link to="chat-app-website" target="_blank" className="af-class-button af-class-_2 w-button">see this project</Link></div>
+                  <div className="af-class-button-wrapper af-class-_2"><a href="chat-app-website.html" target="_blank" className="af-class-button af-class-_2 w-button">see this project</a></div>
                 </div>
                 <div className="af-class-last-work-right">
-                  <Link to="chat-app-website" target="_blank" className="af-class-link-block-3 w-inline-block">
-                    <div className="af-class-text-block-2">see this project </div><img src="images/chat-app.jpg" srcSet="images/chat-app-p-500.jpeg 500w, images/chat-app-p-800.jpeg 800w, images/chat-app.jpg 816w" sizes="(max-width: 479px) 74vw, (max-width: 767px) 84vw, (max-width: 991px) 39vw, (max-width: 1439px) 36vw, 39vw" alt className="af-class-image-2" /></Link>
+                  <a href="chat-app-website.html" target="_blank" className="af-class-link-block-3 w-inline-block">
+                    <div className="af-class-text-block-2">see this project </div><img src="images/chat-app.jpg" srcSet="images/chat-app-p-500.jpeg 500w, images/chat-app-p-800.jpeg 800w, images/chat-app.jpg 816w" sizes="(max-width: 479px) 74vw, (max-width: 767px) 84vw, (max-width: 991px) 39vw, (max-width: 1439px) 36vw, 39vw" alt className="af-class-image-2" /></a>
                 </div>
               </div>
             </div>
