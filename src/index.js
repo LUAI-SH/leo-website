@@ -4,7 +4,7 @@ import { BrowserRouter, Switch, Route, Link } from "react-router-dom";
 import * as serviceWorker from './serviceWorker';
 import App from './App';
 import './index.css';
-import './styles';
+//import './styles';
 import './scripts';
 
 import IndexView from './views/IndexView';
