@@ -1,18 +1,29 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import { BrowserRouter, Switch, Route, Link } from "react-router-dom";
 import * as serviceWorker from './serviceWorker';
+import App from './App';
+import './index.css';
 import './styles';
 import './scripts';
+
 import IndexView from './views/IndexView';
+import ChatAppWebsiteView from './views/ChatAppWebsiteView';
+import TeamAppView from './views/TeamAppView';
 
 
 ReactDOM.render(
-  <React.StrictMode>
-    <IndexView />
-  </React.StrictMode>,
-  document.getElementById('root')
+  <BrowserRouter>
+    <Switch>
+      <Route exact path="/" component={IndexView} />
+      <Route path="/team-app" component={TeamAppView} />
+      <Route path="/chat-app" component={ChatAppWebsiteView} />
+    </Switch>
+  </BrowserRouter>
+  // <React.StrictMode>
+  //   <IndexView />
+  // </React.StrictMode>
+  , document.getElementById('root')
 );
 
 // If you want your app to work offline and load faster, you can change

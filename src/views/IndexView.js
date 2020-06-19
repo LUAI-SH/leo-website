@@ -116,7 +116,7 @@ class IndexView extends React.Component {
                   <div className="af-class-button-wrapper af-class-_2"><a href="team-app.html" target="_blank" className="af-class-button af-class-_2 w-button">see this project</a></div>
                 </div>
                 <div className="af-class-last-work-right">
-                  <a href="team-app.html" target="_blank" className="af-class-link-block-3 w-inline-block">
+                  <a href="team-app" target="_blank" className="af-class-link-block-3 w-inline-block">
                     <div className="af-class-text-block-2">see this project </div><img src="images/team_app.jpg" srcSet="images/team_app-p-500.jpeg 500w, images/team_app-p-800.jpeg 800w, images/team_app.jpg 900w" sizes="(max-width: 479px) 74vw, (max-width: 767px) 84vw, (max-width: 991px) 39vw, (max-width: 1439px) 36vw, 39vw" alt className="af-class-image-2" /></a>
                 </div>
               </div>
@@ -137,7 +137,7 @@ class IndexView extends React.Component {
                   <div className="af-class-button-wrapper af-class-_2"><a href="chat-app-website.html" target="_blank" className="af-class-button af-class-_2 w-button">see this project</a></div>
                 </div>
                 <div className="af-class-last-work-right">
-                  <a href="chat-app-website.html" target="_blank" className="af-class-link-block-3 w-inline-block">
+                  <a href="chat-app-website" target="_blank" className="af-class-link-block-3 w-inline-block">
                     <div className="af-class-text-block-2">see this project </div><img src="images/chat-app.jpg" srcSet="images/chat-app-p-500.jpeg 500w, images/chat-app-p-800.jpeg 800w, images/chat-app.jpg 816w" sizes="(max-width: 479px) 74vw, (max-width: 767px) 84vw, (max-width: 991px) 39vw, (max-width: 1439px) 36vw, 39vw" alt className="af-class-image-2" /></a>
                 </div>
               </div>
